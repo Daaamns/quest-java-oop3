@@ -9,9 +9,25 @@ public class Eagle extends Bird implements Fly {
         this.altitude = 0;
     }
 
+   public int getAltitude() {
+        return this.altitude;
+    }
+
+    public void setAltitude(int alt) {
+        this.altitude = alt;
+    }
+
+    public boolean isFlying() {
+        return this.flying;
+    }
+
+    public void setisLfying (boolean res) {
+        this.flying = res;
+    }
+
     @Override
     public String sing() {
-        return "Squawk!";
+        return "Screech!";
     }
 
     @Override
